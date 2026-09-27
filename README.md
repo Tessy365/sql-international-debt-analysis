@@ -31,7 +31,7 @@ UPDATE international_debt.international_debt_with_missing_values t1
 SET country_code = t2.country_code
 FROM international_debt.international_debt_with_missing_values t2
 WHERE t1.country_name = t2.country_name AND t1.country_code IS NULL AND t2.country_code IS NOT NULL;
-
+```
 
 ## Repository Structure
 
